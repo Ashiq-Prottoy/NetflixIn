@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html{scroll-behavior: smooth;}
+button:focus {
+  outline: none;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: black;
+  color: white;
+}
+.active {
+  background-color: black;
+  padding: 10px 0px;
+  z-index: 11;
+}
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  transition: .5s ease-in-out;
+  min-height: 6vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+img#a {
+  width: 110px;
+}
+
+img#b {
+  width: 30px;
+  height: 33px;
+  margin: 5px 16px 0px 0px;
+  cursor: pointer;
+}
+
+.banner {
+  position: relative;
+  background-image: url("../images/Banner1.jpg");
+  background-position: top;
+  background-size: cover;
+  height: 60vh;
+}
+
+.banner:before {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black));
+  background: linear-gradient(transparent, black);
+  height: 161px;
+  width: 100%;
+}
+
+.banner-content {
+  position: relative;
+  top: 40px;
+  line-height: 2;
+  padding: 20px;
+}
+
+.banner-content button {
+  padding: 8px 18px;
+  width: 100px;
+  margin-right: 20px;
+  background: #4747479e;
+  color: white;
+  border: none;
+  font-family: 'Oswald';
+  margin-bottom: 20px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.banner-content button:hover {
+  background: #ffffffad;
+  color: black;
+}
+
+.banner-content p {
+  width: 300px;
+  font-size: 15px;
+  color: #ffffffcf;
+  line-height: 20px;
+}
+
+.banner-content h1 {
+  font-size: 50px;
+}
+
+.cover {
+  width: 100%;
+}
+
+.posters {
+  display: block;
+  width: 100%;
+  overflow-x: scroll;
+  height: 39vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.posters .slider {
+  display: block;
+  white-space: nowrap;
+}
+
+.posters .slider .ps-img {
+  display: inline-block;
+  margin: 14px;
+  width: 150px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.ps-img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+h1.thead {
+  position: relative;
+  margin-left: 10px;
+  top: -34px;
+  height: 1vh;
+}
+
+.posters::-webkit-scrollbar {
+  width: 0px;
+}
+
+.posters::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(rgba(255, 0, 0, 0.746)), to(black));
+  background: linear-gradient(black, rgba(255, 0, 0, 0.746), black);
+  border-radius: 20px;
+}
+
+.m::-webkit-scrollbar {
+  width: 0px;
+}
+
+.m::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(rgba(255, 0, 0, 0.746)), to(black));
+  background: linear-gradient(black, rgba(255, 0, 0, 0.746), black);
+  border-radius: 20px;
+}
+
+.m {
+  display: block;
+  overflow-x: scroll;
+  width: 100%;
+}
+
+.h {
+  margin-left: 10px;
+}
+
+.m .n-slider {
+  display: block;
+  white-space: nowrap;
+  padding: 30px 20px;
+}
+
+.m .n-slider img {
+  width: 200px;
+  margin-right: 15px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.n-slider img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+footer {
+  color: #818ba0;
+  line-height: 2;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+i {
+  color: #757575;
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 10px 11px;
+  margin: 10px 9px;
+}
+
+i:hover {
+  background: white;
+  color: black;
+}
+.trailer-video {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+
+@media (max-width:450px){
+  .banner-content {
+    top: 83px;
+}
+h1#movie-name {
+  font-size: 39px;
+}
+.banner-content button {
+  padding: 4px 19px;
+  width: 85px;
+}
+.banner-content p {
+  font-size: 13px;
+  width: 100%;
+}
+.h{font-size: 22px;}
+
+}
+/*# sourceMappingURL=main.css.map */
